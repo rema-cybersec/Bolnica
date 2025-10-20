@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+                                 http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <persistence-unit name="default" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!-- your entity classes -->
+        <class>entities.Mr10223Lekar</class>
+        <class>entities.Mr10223Pacijent</class>
+        <class>entities.Mr10223Dijagnoza</class>
+        <class>entities.Mr10223Pregled</class>
+
+        <properties>
+            <!-- Oracle JDBC connection -->
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@nastava.is.pmf.uns.ac.rs:1521/baze1"/>
+            <property name="javax.persistence.jdbc.user" value="baze1"/>
+            <property name="javax.persistence.jdbc.password" value="baze1"/>
+
+            <!-- Hibernate settings -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="none"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
+            <property name="hibernate.default_schema" value="BAZE1"/>
+        </properties>
+    </persistence-unit>
+</persistence>
