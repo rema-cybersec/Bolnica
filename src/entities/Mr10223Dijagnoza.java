@@ -42,6 +42,8 @@ public class Mr10223Dijagnoza {
         return opis;
     }
 
+    public String getSifra() {return  id.getSifra();}
+
     public void setOpis(String opis) {
         this.opis = opis;
     }

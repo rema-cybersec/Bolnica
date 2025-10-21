@@ -1,6 +1,8 @@
 package views;
 
 import entities.Mr10223Pregled;
+
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 

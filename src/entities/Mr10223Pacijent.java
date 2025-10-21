@@ -36,6 +36,6 @@ public class Mr10223Pacijent {
     }
 
     public String toString() {
-         return "Pacijent {" + this.id.getIme() + ", " + this.id.getPrz() + ", " + this.id.getDatrodj() + ", " + this.osig + "}";
+         return this.getId().getIme() + " " + this.getId().getPrz() + "(" + this.getId().getDatrodj() +")";
     }
 }

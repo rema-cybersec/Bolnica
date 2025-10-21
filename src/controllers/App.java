@@ -8,6 +8,7 @@ import gui.MainWindow;
 
 public class App {
 
+    // App by rema-cybersec 102.23@dmi.pmf.uns.ac.rs
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             try {
@@ -19,13 +20,11 @@ public class App {
             try {
                 EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
                 EntityManager em = emf.createEntityManager();
+                Queries q = new Queries();
+                q.printDeleteRules("MR10223_PREGLED");
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            // Initialize database (optional for now)
-            // Database.initConnection();
-
-            // Load and show main window
             MainWindow mainWindow = new MainWindow();
             mainWindow.setVisible(true);
         });

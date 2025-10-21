@@ -23,6 +23,6 @@ public class Mr10223Lekar {
     }
 
     public String toString() {
-        return "Lekar: {" + "ime=" + id.getIme() + ", prz=" + id.getPrz() + ", spec=" + id.getSpec() + '}';
+        return this.getId().getIme() + " " +  this.getId().getPrz() + " (" + this.getId().getSpec() + ")";
     }
 }

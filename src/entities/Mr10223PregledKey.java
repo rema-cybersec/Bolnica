@@ -21,6 +21,8 @@ public class Mr10223PregledKey implements Serializable {
             @AttributeOverride(name = "prz", column = @Column(name = "PACIJENT_PRZ")),
             @AttributeOverride(name = "datrodj", column = @Column(name = "PACIJENT_DATRODJ"))
     })
+    // ne ovo nije normalno
+    // sati provedeno namestajuci hibernate: 14
     private Mr10223PacijentKey pacijentId;
 
     @Column(name="dat", nullable = false)

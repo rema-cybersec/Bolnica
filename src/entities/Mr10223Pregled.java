@@ -16,6 +16,7 @@ public class Mr10223Pregled {
             @AttributeOverride(name = "pacijentId.prz", column = @Column(name = "PACIJENT_PRZ")),
             @AttributeOverride(name = "pacijentId.datrodj", column = @Column(name = "PACIJENT_DATRODJ")),
     })
+    // ZASTO SAM ODLUCIO DA CU MODELOVATI BAZU SA KOMPOZITNIM KLJUCEVIMA MRZIM HIBERNATE
     private Mr10223PregledKey id;
 
     @Column(name="VREME", nullable = false)
